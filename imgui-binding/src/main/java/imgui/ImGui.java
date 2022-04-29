@@ -103,7 +103,7 @@ public class ImGui {
             libPrefix = "lib";
             libSuffix = ".so";
         }
-        String libName = libPrefix + LIB_NAME_DEFAULT + libSuffix;
+        final String libName = libPrefix + LIB_NAME_DEFAULT + libSuffix;
         System.out.println(libName);
         return System.getProperty(LIB_NAME_PROP, libName);
     }
