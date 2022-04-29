@@ -103,8 +103,9 @@ public class ImGui {
             libPrefix = "lib";
             libSuffix = ".so";
         }
-
-        return System.getProperty(LIB_NAME_PROP, libPrefix + LIB_NAME_DEFAULT + libSuffix);
+        String libName = libPrefix + LIB_NAME_DEFAULT + libSuffix;
+        System.out.println(libName);
+        return System.getProperty(LIB_NAME_PROP, libName);
     }
 
     // This method tries to unpack the library binary from classpath into the temp dir.
